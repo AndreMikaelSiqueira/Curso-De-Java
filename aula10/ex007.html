@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando numeros </title>
+    <style>
+        * {
+            align-items: center;
+            justify-content: b;
+        }
+
+
+        div#seila {
+            background: rgb(116, 116, 252);
+            width: 100;
+            height: 500px;
+            font: normal 15pt arial;
+            text-align: center;
+            
+        }
+        
+        h1 {
+            background: white;
+            border-radius: 100px;
+            border-bottom: 0px;
+            margin: auto;
+            margin-top: -10px;
+            width: 350px;
+            padding: 5px;
+            
+            
+            
+            height: 5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #res {
+            text-align: center;
+            font: normal 20pt arial;
+        }
+
+        #n1 {
+            margin: 5px;
+        }
+
+        #texto {
+            text-align: center;
+            border: 0px;
+        }
+
+        p {
+            font: normal 1px arial;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="seila">
+    <h1 id="texto">Somando Valores</h1>
+    <input type="number" name="n1" id="n1">
+    <input type="number" name="n2" id="n2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado</div>
+    <p>eu nao aguento mais</p>
+    <script>
+        function somar() {
+            var nu1 = document.getElementById('n1')
+            var nu2 = document.querySelector('input#n2')
+            var res = document.getElementById('res')
+            var n1 = Number(nu1.value)
+            var n2 = Number(nu2.value)
+            var s = n1 + n2 
+            res.innerHTML = `A soma entre <strong>${n1}</strong> e o <strong>${n2}</strong> é igual a <strong>${s}</strong>`
+        }
+    </script>
+    </div>
+</body>
+</html>

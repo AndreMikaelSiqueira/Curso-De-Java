@@ -16,12 +16,13 @@
     </style>
 </head>
 <body>
-    <h1>Iniciando meus Estudos Com <strong>DOM</strong></h1>
-    <p>Aqui vai o resultado</p>
+    <h1 id="msg">Iniciando meus Estudos Com <strong>DOM</strong></h1>
+    <p id="msg">Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em <strong>JavaScript</strong></p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
     <script>
-
+         var d = document.querySelector('h1#msg')
+         d.style.background = 'Black'
     </script>
 </body>
 </html>
