@@ -6,6 +6,7 @@ body {
 header {
     color: white;
     text-align: center;
+    text-shadow: -3px 3px 7px  rgba(0, 0, 0, 0.651);
 }
 
 section {
@@ -15,11 +16,13 @@ section {
     margin: auto;
     color: black;
     border-radius: 15px;
-    text-align: center;
+    
+    box-shadow: 1px 2px 5px 5px rgba(0, 0, 0, 0.377);
 }
 
 
 footer {
+    padding: 15px;
     color: white;
     text-align: center;
     font-style: italic;

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema De Multas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema De Multas</h1>
+    </header>
+    <section>
+        <div id="foto">
+            <img src="imagens/imagemdosite.png" alt="imagem">
+            <p>Velocidade do Carro:<input type="number" name="txtvel" id="txtvel">Km/h<input type="button" value="Verificar" onclick="calcular()"></p>
+        </div>
+        <div id="res">
+            
+        </div>
+    </section>
+    <footer>
+        @AndreMikaelSiqueira
+    </footer>
+    <script>
+        function calcular() {
+            var txtv = document.getElementById('txtvel')
+            var vel = Number(txtv.value)
+            res.innerHTML = `<p>Sua Velocidade é de <strong>${vel}Km/h</strong></p>`
+            if (vel >= 60) {
+            res.innerHTML += `<p>Sua Velocidade Passou Da Media <strong>MULTADO</strong>!</p>`
+            document.body.style.background = '#ff4c4c'
+            } else {
+                res.innerHTML = `<p>Sua Velocidade é de <strong>${vel}Km/h</strong></p>`
+                res.innerHTML += `<p>Sempre diriga com cinto de segurança</p>`
+                document.body.style.background = '#4cff69'
+            }
+        } 
+        
+    </script>
+</body>
+</html>
